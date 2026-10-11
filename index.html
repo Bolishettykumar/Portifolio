@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srinivaskumar Bolishetty — Software Developer | Java &amp; Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Srinivaskumar Bolishetty, a Software Developer from Hyderabad, India focused on Java, full-stack development and problem-solving. B.Tech CSE (AI), Parul University, 2026." />
+  <meta name="author" content="Srinivaskumar Bolishetty" />
+  <meta name="theme-color" content="#08090c" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Srinivaskumar Bolishetty — Software Developer" />
+  <meta property="og:description" content="Java and full-stack developer building practical digital solutions." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Mark JS as available (enables reveal animations) and apply saved theme before paint -->
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('sk-theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <!-- ============ Inline SVG icon sprite (Lucide-style) ============ -->
+  <svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M19.44 7.85c-.49.49-1.27.49-1.76 0l-1.56-1.56a2 2 0 0 0-2.83 0l-1.06 1.06a1.25 1.25 0 1 0 1.77 1.77 1.25 1.25 0 0 1 1.77 1.77L14 12.66l1.61 1.61c.47.47.47 1.23 0 1.7a2.4 2.4 0 1 1-3.39 3.39 1.2 1.2 0 0 0-1.7 0L8.9 21a2 2 0 0 1-2.83 0l-1.56-1.56a1.24 1.24 0 0 1 0-1.76 2.5 2.5 0 1 0-3.53-3.53"/><path d="M6.07 2.47 7.6 4c.49.49 1.27.49 1.76 0a2.5 2.5 0 1 1 3.53 3.53c-.48.49-.48 1.27 0 1.76l1.56 1.56"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Reading progress -->
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- ============ 1. Navigation (floating pill) ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell container">
+      <a href="#home" class="logo" aria-label="Srinivaskumar Bolishetty — back to top">
+        <span class="logo-mark">SK</span>
+      </a>
+
+      <nav class="nav-pill" aria-label="Primary">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+          <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-light btn-sm nav-cta">Let's talk</a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Full-screen mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <ul class="mobile-links">
+        <li><a href="#home" class="nav-link"><span>01</span>Home</a></li>
+        <li><a href="#about" class="nav-link"><span>02</span>About</a></li>
+        <li><a href="#skills" class="nav-link"><span>03</span>Skills</a></li>
+        <li><a href="#projects" class="nav-link"><span>04</span>Projects</a></li>
+        <li><a href="#experience" class="nav-link"><span>05</span>Experience</a></li>
+        <li><a href="#education" class="nav-link"><span>06</span>Education</a></li>
+        <li><a href="#certifications" class="nav-link"><span>07</span>Certifications</a></li>
+        <li><a href="#contact" class="nav-link"><span>08</span>Contact</a></li>
+      </ul>
+      <div class="mobile-social">
+        <a data-link="github" href="https://github.com/Bolishettykumar" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+        <a data-link="linkedin" href="https://www.linkedin.com/in/bolishetty-srinivas-kumar-849369263/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon"><use href="#i-arrow-up-right"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ 2. Hero ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="aurora aurora-a"></div>
+        <div class="aurora aurora-b"></div>
+        <div class="noise"></div>
+        <div class="grid-lines"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-greeting load-in" style="--d:0">
+            <span class="pulse" aria-hidden="true"></span>Hi, I'm
+          </p>
+          <h1 class="hero-name load-in" style="--d:1" id="hero-title">
+            Srinivaskumar <em class="serif">Bolishetty</em>
+          </h1>
+          <p class="hero-role load-in" style="--d:2">
+            <span class="sr-only">Software Developer, Java Developer, Full Stack Developer</span>
+            <span aria-hidden="true"><span class="role-bracket">&lt;</span><span id="typed" class="typed">Software Developer</span><span class="caret"></span><span class="role-bracket"> /&gt;</span></span>
+          </p>
+          <p class="hero-headline load-in" style="--d:3">
+            Software Developer building <em class="serif accent">practical</em> digital solutions.
+          </p>
+          <p class="hero-desc load-in" style="--d:4">I'm a Software Developer passionate about Java, Full Stack Development, problem-solving, and building practical software solutions. I enjoy learning new technologies and developing applications that address real-world problems.</p>
+
+          <div class="hero-ctas load-in" style="--d:5">
+            <a href="#projects" class="btn btn-primary">Explore My Projects <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+
+          <div class="hero-meta load-in" style="--d:6">
+            <div class="hero-social">
+              <a class="social-btn" data-link="github" href="https://github.com/Bolishettykumar" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">
+                <svg class="icon"><use href="#i-github"/></svg>
+              </a>
+              <a class="social-btn" data-link="linkedin" href="https://www.linkedin.com/in/bolishetty-srinivas-kumar-849369263/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
+                <svg class="icon"><use href="#i-linkedin"/></svg>
+              </a>
+            </div>
+            <span class="meta-divider" aria-hidden="true"></span>
+            <span class="hero-location"><svg class="icon"><use href="#i-pin"/></svg><span data-config="location">Hyderabad, Telangana, India</span></span>
+          </div>
+        </div>
+
+        <!-- Profile photo in a gradient frame + floating chips -->
+        <div class="hero-visual load-in" style="--d:3">
+          <figure class="portrait">
+            <div class="frame">
+              <img src="assets/images/profile.jpg" alt="Portrait of Srinivaskumar Bolishetty" width="800" height="1000" fetchpriority="high" decoding="async" />
+            </div>
+          </figure>
+
+          <div class="chip chip-a" aria-hidden="true"><svg class="icon"><use href="#i-code"/></svg><span>Java · Full Stack</span></div>
+          <div class="chip chip-b" aria-hidden="true"><span class="chip-dot"></span>Software Developer &amp; Instructor</div>
+        </div>
+      </div>
+
+      <!-- Tech marquee -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" id="marqueeTrack"></div>
+      </div>
+    </section>
+
+    <!-- ============ 3. About (bento grid) ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>01</span> About</p>
+          <h2 id="about-title" class="section-title">About <em class="serif">Me</em></h2>
+        </header>
+
+        <div class="bento">
+          <article class="tile tile-intro spot reveal">
+            <p class="tile-label">Introduction</p>
+            <p class="intro-lead">I'm <strong>Srinivaskumar Bolishetty</strong>, a software developer with an interest in Java development, full-stack applications, and problem-solving.</p>
+            <p class="intro-body">I enjoy building practical projects, strengthening my programming fundamentals, and continuously improving my technical skills. My goal is to contribute to meaningful software products while growing as a developer.</p>
+          </article>
+
+          <article class="tile tile-focus spot reveal">
+            <span class="tile-icon"><svg class="icon"><use href="#i-code"/></svg></span>
+            <h3>Software Development</h3>
+            <p>Building useful and maintainable software applications.</p>
+          </article>
+
+          <article class="tile tile-focus spot reveal">
+            <span class="tile-icon"><svg class="icon"><use href="#i-puzzle"/></svg></span>
+            <h3>Problem Solving</h3>
+            <p>Strengthening programming fundamentals and Data Structures &amp; Algorithms.</p>
+          </article>
+
+          <article class="tile tile-place spot reveal">
+            <div class="radar" aria-hidden="true"><span></span><span></span><i></i></div>
+            <p class="tile-label">Based in</p>
+            <p class="tile-big" data-config="location">Hyderabad, Telangana, India</p>
+          </article>
+
+          <article class="tile tile-edu spot reveal">
+            <p class="tile-label">Education</p>
+            <p class="tile-big">B.Tech CSE <span class="muted">(AI)</span></p>
+            <p class="tile-sub">Parul University · Class of <span class="serif-num">2026</span></p>
+          </article>
+
+          <article class="tile tile-stack spot reveal">
+            <div class="stack-copy">
+              <span class="tile-icon"><svg class="icon"><use href="#i-layers"/></svg></span>
+              <h3>Full Stack Development</h3>
+              <p>Exploring frontend, backend, and database technologies to build complete applications.</p>
+            </div>
+            <div class="stack-visual" aria-hidden="true">
+              <div class="layer l1"><svg class="icon"><use href="#i-layout"/></svg>Frontend</div>
+              <div class="layer l2"><svg class="icon"><use href="#i-server"/></svg>Backend</div>
+              <div class="layer l3"><svg class="icon"><use href="#i-database"/></svg>Database</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. Skills ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>02</span> Skills</p>
+          <h2 id="skills-title" class="section-title">Technical <em class="serif">Skills</em></h2>
+          <p class="section-sub">Languages, frameworks and tools I have learned and used.</p>
+        </header>
+        <div class="skills-list" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ 5. Projects ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>03</span> Work</p>
+          <h2 id="projects-title" class="section-title">Featured <em class="serif">Projects</em></h2>
+          <p class="section-sub">A selection of projects showcasing my technical skills and practical development experience.</p>
+        </header>
+        <div class="projects" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ 6. Experience ============ -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>04</span> Career</p>
+          <h2 id="experience-title" class="section-title">Professional <em class="serif">Experience</em></h2>
+        </header>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- ============ 7. Education ============ -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>05</span> Academics</p>
+          <h2 id="education-title" class="section-title"><em class="serif">Education</em></h2>
+        </header>
+        <div id="educationCard"></div>
+      </div>
+    </section>
+
+    <!-- ============ 8. Certifications ============ -->
+    <section class="section" id="certifications" aria-labelledby="certs-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>06</span> Learning</p>
+          <h2 id="certs-title" class="section-title"><em class="serif">Certifications</em></h2>
+        </header>
+        <div class="certs" id="certsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ 9. Contact ============ -->
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <p class="eyebrow"><span>07</span> Contact</p>
+          <h2 id="contact-title" class="contact-title">Let's <em class="serif">Connect</em></h2>
+          <p class="contact-sub">Have an opportunity, collaboration idea, or interesting project? I'd love to connect.</p>
+          <ul class="contact-links" id="contactList"><!-- filled from CONFIG --></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 10. Footer ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-name"><span data-config="name">Srinivaskumar Bolishetty</span></p>
+          <p class="footer-title" data-config="title">Software Developer | Java Developer | Full Stack Developer</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> <span data-config="name">Srinivaskumar Bolishetty</span>. Built with HTML, CSS &amp; JavaScript.</p>
+        <div class="footer-social">
+          <a class="social-btn" data-link="github" href="https://github.com/Bolishettykumar" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)"><svg class="icon"><use href="#i-github"/></svg></a>
+          <a class="social-btn" data-link="linkedin" href="https://www.linkedin.com/in/bolishetty-srinivas-kumar-849369263/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+          <a class="social-btn" href="#home" aria-label="Back to top"><svg class="icon"><use href="#i-arrow-up"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <svg class="icon"><use href="#i-arrow-up"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
